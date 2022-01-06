@@ -4,36 +4,15 @@
     <Search v-model="search" />
     <div
       v-show="searchUsers.length == 0"
-      class="
-        my-3
-        border border-red-600
-        text-red-50
-        w-1/2
-        mx-auto
-        p-3
-        rounded
-        bg-red-500
-      "
-    >
-      No User found
-    </div>
+      class="my-3 border border-red-600 text-red-50 w-1/2 mx-auto p-3 rounded bg-red-500"
+    >No User found</div>
     <div
       v-for="user in searchUsers"
       :key="user.id"
-      class="
-        w-1/2
-        mx-auto
-        border border-gray-200
-        bg-white-100
-        text-left
-        pl-5
-        my-3
-        shadow-md
-        rounded
-      "
+      class="w-1/2 mx-auto border border-gray-200 bg-white-100 text-left pl-5 my-3 shadow-md rounded"
     >
       <router-link :to="{ name: 'users', params: { id: user.id } }">
-        <ul class="my-4 list-outside">
+        <ul class="my-4">
           <li>{{ user.id }}. User: {{ user.name }}</li>
           <li>Email: {{ user.email }}</li>
           <li>
@@ -57,11 +36,11 @@ export default {
     Search,
   },
   setup() {
-    const msg = ref("");
-    
+    const msg = ref("Example of how to fetch api in Vue 3");
+
     // get list of users from compsition api 
     const { searchUsers, search } = fetchUsers();
-    
+
     return { msg, search, searchUsers };
   },
 };

@@ -1,9 +1,9 @@
 <template>
   <div class="flex h-screen">
-    <div class="w-full lg:w-1/3 m-auto p-7 shadow-lg shadow-pink-400 border-4 border-t-purple-600 border-r-pink-600 border-b-pink-600 border-l-indigo-600  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <div class="w-full lg:w-1/4 m-auto p-7 shadow-lg shadow-pink-400 border-4 border-t-purple-600 border-r-pink-600 border-b-pink-600 border-l-indigo-600  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
       <!-- <p class="font-bold text-white text-lg">{{ currentTime.toLocaleString() }}</p> -->
-      <p class="font-bold text-white text-lg tracking-wider flex justify-center mb-4">{{ currentTime.toLocaleDateString() }}</p>
-      <p class="font-bold text-white text-6xl pb-2">{{ currentTime.toLocaleTimeString() }}</p>
+      <p class="font-bold text-white pt-3 text-6xl">{{ currentTime.toLocaleTimeString() }}</p>
+      <p class="font-bold text-white text-sm mb-1 flex justify-end mr-3">{{ currentTime.toLocaleDateString() }}</p>
     </div>
   </div>
 </template>

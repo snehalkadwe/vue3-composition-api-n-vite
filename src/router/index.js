@@ -7,6 +7,8 @@ import User from '../components/User.vue';
 import ListOfUsers from '../components/ListOfUsers.vue';
 import CurrentTimeExample from '../components/CurrentTimeExample.vue';
 import Todos from '../components/Todo/Todos.vue';
+import DraggableComponent from '../components/DragDropExample/DraggableComponent.vue';
+import SharableLinkExample from '../components/CopySharableLink/SharableLinkExample.vue';
 
 const routes = [
     {
@@ -44,6 +46,16 @@ const routes = [
         path: '/todos',
         name: 'Todos',
         component: Todos
+    },
+    {
+        path: '/drag-n-drop',
+        name: 'DraggableComponent',
+        component: DraggableComponent
+    },
+    {
+        path: '/copy-link',
+        name: 'SharableLinkExample',
+        component: SharableLinkExample
     },
 ];
 

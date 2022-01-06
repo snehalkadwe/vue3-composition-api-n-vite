@@ -1,7 +1,7 @@
 module.exports = {
   content: [
-    './public/**/*.html',
-    './src/**/*.{js,jsx,ts,tsx,vue}'
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   media: false, // or 'media' or 'class'
   theme: {
