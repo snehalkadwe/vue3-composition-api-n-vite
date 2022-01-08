@@ -5,7 +5,7 @@
           <router-link to="/users" class="nav-link justify-self-center">API Users</router-link>
           <router-link to="/multiple-v-model" class="nav-link justify-self-center">MultipleVmodel</router-link>
           <router-link to="/list/users" class="nav-link justify-self-center">List of Users</router-link>
-          <router-link to="/timer" class="nav-link justify-self-center">Current Time Example</router-link>
+          <router-link to="/timer" class="nav-link justify-self-center">Digital Clock</router-link>
           <router-link to="/todos" class="nav-link justify-self-center">Todos</router-link>
           <router-link to="/drag-n-drop" class="nav-link justify-self-center">Drag n Drop Ex</router-link>
           <router-link to="/copy-link" class="nav-link justify-self-center">Copy Sharable Link</router-link>
